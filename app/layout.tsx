@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Lexend as FontFamily } from 'next/font/google'
+import NextTopLoader from "nextjs-toploader"
 
 const font = FontFamily({ subsets: ['latin'] })
 
@@ -16,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-neutral-950`}>{children}</body>
+      
+      <body className={`${font.className} bg-neutral-950`}>
+        <NextTopLoader showSpinner={false} shadow={false} height={3} color='#db2877'/>
+        {children}
+      </body>
     </html>
   )
 }
