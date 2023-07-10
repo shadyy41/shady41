@@ -98,7 +98,7 @@ const projects : Map<string, Project> = new Map([
 
 export { projects }
 
-const classes_array = ["bg-rose-600", "bg-green-500", "bg-purple-600", "bg-yellow-500"]
+const classes_array = ["bg-rose-600", "bg-green-500", "bg-purple-600", "bg-pink-500"]
 
 export default function Home() {
   return (
