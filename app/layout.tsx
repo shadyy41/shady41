@@ -1,12 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter as FontFamily } from 'next/font/google'
+import { Lexend as FontFamily } from 'next/font/google'
 
 const font = FontFamily({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'shady41',
-  description: '',
+  title: 'shady41 - home',
+  description: 'Personal website and blog of Abhinav Jha.'
 }
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={`${font.className} bg-neutral-950`}>{children}</body>
     </html>
   )
 }
