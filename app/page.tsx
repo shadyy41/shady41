@@ -107,9 +107,7 @@ export default function Home() {
         <div className="font-medium">
           Abhinav Jha
         </div>
-        <nav className="flex gap-2">
-          <Link href="/blog">Blog</Link>
-        </nav>
+        <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
       </header>
       <div className="w-full px-4 sm:px-0 max-w-2xl flex flex-col gap-2">
         <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-pink-600">#</span>About</h2>
