@@ -102,7 +102,7 @@ const classes_array = ["bg-rose-600", "bg-green-500", "bg-purple-600", "bg-yello
 
 export default function Home() {
   return (
-    <main className="w-full text-zinc-300 flex flex-col items-center gap-5 mb-6">
+    <main className="w-full text-zinc-300 flex flex-col items-center gap-5 pb-6">
       <header className="w-full flex justify-between items-center pt-4 px-4 sm:px-0 max-w-2xl text-sm">
         <div className="font-medium">
           Abhinav Jha
@@ -110,17 +110,17 @@ export default function Home() {
         <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
       </header>
       <div className="w-full px-4 sm:px-0 max-w-2xl flex flex-col gap-2">
-        <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-pink-600">#</span>About</h2>
+        <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-yellow-500">#</span>About</h2>
         <p className="text-lg text-neutral-950 shadow-[5px_5px_0px_0px_#5050507a] p-2 bg-blue-600 rounded-md">I am a fullstack web developer and an engineering undergrad at NSUT, Delhi. I like building web apps with Nextjs and Tailwind, currently I am learning Rust and tRPC.</p>
       </div>
       <div className="w-full px-4 sm:px-0 max-w-2xl flex flex-col gap-2">
-        <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-pink-600">#</span>Projects</h2>
+        <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-yellow-500">#</span>Projects</h2>
         <div className="w-full grid grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-4">
           { Array.from( projects ).map(([key, e], idx)=><ProjectTile key={key} name={e.name} description={ e.short_desc } classes={classes_array[idx]}/>) }
         </div>
       </div>
       <div className="w-full px-4 sm:px-0 max-w-2xl flex flex-col gap-2">
-        <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-pink-600">#</span>Contact</h2>
+        <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-yellow-500">#</span>Contact</h2>
         <div className="flex flex-col gap-1 text-lg text-neutral-950 shadow-[5px_5px_0px_0px_#5050507a] p-2 bg-teal-500 rounded-md">
           <a className="hover:text-white transition-colors w-fit" href="https://www.linkedin.com/in/abhinavanand41/" target="_blank" rel="noopener noreferrer">Linkedin</a>
           <a className="hover:text-white transition-colors w-fit" href="https://github.com/shadyy41" target="_blank" rel="noopener noreferrer">Github</a>

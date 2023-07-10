@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={`${font.className} bg-neutral-950`}>
-        <NextTopLoader showSpinner={false} shadow={false} height={3} color='#db2877'/>
+        <NextTopLoader showSpinner={false} shadow={false} height={3} color='#ebb305'/>
         {children}
       </body>
     </html>

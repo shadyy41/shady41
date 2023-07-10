@@ -30,7 +30,7 @@ const Page = ({ params }: { params: { name: string } }) => {
             <a className="hover:text-white transition-colors w-fit underline decoration-purple-600 decoration-2" target="_blank" rel="noopener noreferrer" href={ project.gh }>Live Link</a>
           </div>
         </div>
-        <div className="shadow-[5px_5px_0px_0px_#db2877] w-full flex flex-col items-center justify-center border border-white border-opacity-10 rounded overflow-hidden">
+        <div className="shadow-[5px_5px_0px_0px_#ebb305] w-full flex flex-col items-center justify-center border border-white border-opacity-10 rounded overflow-hidden">
           <div className="w-full border-b border-white border-opacity-10 h-5 sm:h-8 bg-black flex items-center justify-center relative">
             <div className="flex items-center justify-center gap-1.5 sm:gap-2 p-2 absolute left-0">
               <span className="h-2 sm:h-3 w-2 sm:w-3 bg-[#ff5f56] rounded-full"></span>
@@ -48,13 +48,13 @@ const Page = ({ params }: { params: { name: string } }) => {
           </div>
         </div>
         <div className="w-full max-w-2xl flex flex-col">
-          <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-pink-600">#</span>Description</h2>
+          <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-yellow-500">#</span>Description</h2>
           <p className="text-lg">
             { project.description }
           </p>
         </div>
         <div className="w-full max-w-2xl flex flex-col">
-          <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-pink-600">#</span>Tech Stack</h2>
+          <h2 className="font-semibold items-center flex gap-1 text-2xl"><span className="text-yellow-500">#</span>Tech Stack</h2>
           <ul className="list-disc list-inside">
             { project.tech.map((e, idx)=>{
               return <li key={ idx }>
