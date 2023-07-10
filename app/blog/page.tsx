@@ -1,4 +1,3 @@
-import Image from "next/image"
 import BackButton from "@/app/components/backbutton"
 
 const Page = () => {
