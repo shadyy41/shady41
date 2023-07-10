@@ -3,6 +3,16 @@ import Image from "next/image"
 import BackButton from "@/app/components/backbutton"
 import { redirect } from "next/navigation"
 
+export function generateStaticParams() {
+  const list : Array<{ name: string }> = []
+
+  for(let name of projects.keys()){
+    list.push({ name })
+  }
+
+  return list
+}
+
 const Page = ({ params }: { params: { name: string } }) => {
   const project = projects.get(params.name)
   if(!project) return redirect("/")
@@ -13,14 +23,14 @@ const Page = ({ params }: { params: { name: string } }) => {
         <BackButton/>
         <div className="w-full max-w-2xl flex flex-col">
           <h1>
-            <a href={project.url} className="hover:text-white text-zinc-100 transition-colors w-fit font-semibold text-2xl"  target="_blank" rel="noopener noreferrer">{project.name}</a>
+            <a href={project.url} className="hover:text-white text-zinc-100 transition-colors w-fit font-semibold text-2xl"  target="_blank" rel="noopener noreferrer">{ project.name }</a>
           </h1>
           <div className="flex gap-2 text-sm">
             { project.gh && <a className="hover:text-white transition-colors w-fit underline decoration-yellow-500 decoration-2" target="_blank" rel="noopener noreferrer" href={ project.gh }>Repo</a> }
             <a className="hover:text-white transition-colors w-fit underline decoration-yellow-500 decoration-2" target="_blank" rel="noopener noreferrer" href={ project.url }>Live Link</a>
           </div>
         </div>
-        <div className="shadow-[5px_5px_0px_0px_#5050507a] w-full flex flex-col items-center justify-center border border-white border-opacity-10 rounded overflow-hidden">
+        <div className="shadow-[5px_5px_0px_0px_#ebb305] w-full flex flex-col items-center justify-center border border-white border-opacity-10 rounded overflow-hidden">
           <div className="w-full border-b border-white border-opacity-10 h-5 sm:h-8 bg-black flex items-center justify-center relative">
             <div className="flex items-center justify-center gap-1.5 sm:gap-2 p-2 absolute left-0">
               <span className="h-2 sm:h-3 w-2 sm:w-3 bg-[#ff5f56] rounded-full"></span>
