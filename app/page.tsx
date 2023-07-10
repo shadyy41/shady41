@@ -102,7 +102,7 @@ const classes_array = ["bg-rose-600", "bg-green-500", "bg-purple-600", "bg-pink-
 
 export default function Home() {
   return (
-    <main className="w-full text-zinc-300 flex flex-col items-center gap-5 pb-6">
+    <main className="w-full text-zinc-200 flex flex-col items-center gap-5 pb-6">
       <header className="w-full flex justify-between items-center pt-4 px-4 sm:px-0 max-w-2xl text-sm">
         <div className="font-medium">
           Abhinav Jha
