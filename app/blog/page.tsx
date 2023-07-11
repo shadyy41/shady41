@@ -1,4 +1,9 @@
 import BackButton from "@/app/components/backbutton"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "blog"
+}
 
 const Page = () => {
   return (

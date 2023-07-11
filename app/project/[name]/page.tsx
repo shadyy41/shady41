@@ -2,8 +2,9 @@ import { projects } from "@/app/page"
 import Image from "next/image"
 import BackButton from "@/app/components/backbutton"
 import { redirect } from "next/navigation"
+import type { Metadata } from 'next'
 
-export function generateStaticParams() {
+export function generateStaticParams(): Array<{ name: string }> {
   const list : Array<{ name: string }> = []
 
   for(let name of projects.keys()){
@@ -11,6 +12,17 @@ export function generateStaticParams() {
   }
 
   return list
+}
+
+type Props = {
+  params: { name: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export function generateMetadata({ params }: Props): Metadata {
+  return {
+    title: params.name
+  }
 }
 
 const Page = ({ params }: { params: { name: string } }) => {

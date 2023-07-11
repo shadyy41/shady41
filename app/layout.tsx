@@ -6,7 +6,11 @@ import NextTopLoader from "nextjs-toploader"
 const font = FontFamily({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'shady41 - home',
+  title: {
+    default: 'shady41',
+    template: 'shady41 • %s',
+    
+  },
   description: 'Personal website and blog of Abhinav Jha.'
 }
 

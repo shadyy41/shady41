@@ -13,7 +13,7 @@ const ProjectTile = ( { name, description, classes } : Props ) => {
         <h3 className="text-xl font-semibold">{ name }</h3>
         <p className="text-lg">{ description }</p>
       </div>
-      <p className="text-sm underline decoration-2">View More</p>
+      <p className="text-sm underline decoration-2">View details</p>
     </Link>
   )
 }
