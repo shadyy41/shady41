@@ -30,8 +30,8 @@ const Page = ({ params }: { params: { name: string } }) => {
   if(!project) return redirect("/")
 
   return (
-    <main className="w-full text-zinc-300 flex flex-col items-center gap-5 mb-6">
-      <div className="w-full p-4 sm:px-0 max-w-2xl flex flex-col gap-6">
+    <main className="w-full text-zinc-300 flex flex-col items-center gap-5 p-4 pb-6">
+      <div className="w-full max-w-2xl flex flex-col gap-6">
         <BackButton/>
         <div className="w-full max-w-2xl flex flex-col">
           <h1>
